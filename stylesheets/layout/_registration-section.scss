@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the Registration of the site/application.
+// -----------------------------------------------------------------------------
+.registration-section {
+    margin-top: 80px;
+    padding: 90px 40px;
+
+    background-color: $color-primary;
+
+    font-weight: 400;
+    font-size: 24px;
+    font-family: $title-font-stack;
+    color: $color-neutral-100;
+    text-transform: uppercase;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 65px;
+    }
+
+    &__link {
+        width: 100%;
+        padding: 20px 16px;
+
+        background-color: $color-primary;
+
+        border: 2px solid $color-neutral-100;
+
+        font-weight: 700;
+        font-size: 24px;
+        font-family: $text-font-stack;
+        color: $color-neutral-100;
+        text-align: center;
+
+        &:hover {
+            background-color: $color-neutral-100;
+
+            border-color: $color-primary;
+
+            color: $color-primary;
+        }
+
+        &:active {
+            border-color: $color-neutral-50;
+
+            color: $color-neutral-50;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// Regular font family
+// @type List
+$title-font-stack: 'Proxima Nova', 'Open Sans', 'Arial', sans-serif !default;
+$text-font-stack: 'Montserrat', 'Open Sans', 'Arial', sans-serif !default;
+$accent-font-stack: 'Roboto', 'Open Sans', 'Arial', sans-serif !default;
+
+// Code (monospace) font family
+// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+// Main colors
+// @type Color
+$color-primary: #3a539b !default;
+$color-primary-90: #ececec !default;
+$color-primary-60: #41aace !default;
+
+// Neutral colors
+// @type Color
+$color-neutral-100: #ffffff !default;
+$color-neutral-90: #f0f0f0 !default;
+$color-neutral-80: #dddddd !default;
+$color-neutral-70: #d1d1d1 !default;
+$color-neutral-60: #c5c5c5 !default;
+$color-neutral-50: #747474 !default;
+$color-neutral-40: #545454 !default;
+$color-neutral-30: #363636 !default;
+$color-neutral-20: #333333 !default;
+$color-neutral-10: #111111 !default;
+
+// Container's maximum width
+// @type Length
+$max-width: 1170px !default;
+
+// Breakpoints map
+// @prop {String} keys - Keys are identifiers mapped to a given length
+// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'xsmall': 320px,
+  'small': 600px,
+  'medium': 900px,
+  'large': 1200px,
+) !default;
+
+// Size map
+// @prop {String} keys - Keys are identifiers mapped to a given length
+// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$radius-sizes: (
+  'xsmall': 4px,
+  'small': 8px,
+  'medium': 12px,
+  'large': 20px,
+  'full': 120px,
+) !default;
+
+// Relative or absolute URL where all assets are served from
+// @type String
+// @example scss - When using a CDN
+//   $base-url: 'https://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

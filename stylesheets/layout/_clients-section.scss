@@ -1,0 +1,144 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the About Us section of the site/application.
+// -----------------------------------------------------------------------------
+.clients {
+    padding-top: 75px;
+
+    &__list {
+        display: flex;
+        gap: 14px;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+
+        width: 100%;
+        padding: 28px 100px 50px;
+
+        background-color: $color-neutral-100;
+
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.4);
+    }
+
+    &__item:nth-child(1) {
+        display: flex;
+        justify-content: flex-end;
+
+        background-color: $color-primary;
+
+        color: $color-neutral-100;
+
+        & .clients__link {
+            display: inline-block;
+            max-width: 207px;
+            width: 100%;
+            padding: 8px 7px 7px 7px;
+    
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+    
+            background-color: $color-neutral-100;
+    
+            border: 2px solid $color-neutral-100;
+    
+            font-weight: 700;
+            font-size: 24px;
+            font-family: $title-font-stack;
+            color: $color-primary;
+            text-align: center;
+            text-transform: uppercase;
+    
+            &:hover {
+                background-color: transparent;
+    
+                border-color: $color-neutral-100;
+    
+                color: $color-neutral-100;
+            }
+    
+            &:active {
+                border-color: $color-neutral-50;
+    
+                color: $color-neutral-50;
+            }
+        }
+    }
+
+    &__content-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        width: 327px;
+        padding-bottom: 70px;
+
+        position: relative;
+    }
+
+    &__avatar {
+        padding-bottom: 25px;
+    }
+
+    &__img {
+        overflow: hidden;
+        
+        border-radius: 120px;
+    }
+
+    &__title {
+        padding-bottom: 4px;
+        font-weight: 700;
+        font-size: 24px;
+        font-family: $title-font-stack;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        font-family: $accent-font-stack;
+        line-height: 1.2;
+    }
+
+    &__link {
+        display: inline-block;
+        max-width: 207px;
+        width: 100%;
+        padding: 8px 7px 7px 7px;
+
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+
+        background-color: $color-primary;
+
+        border: 2px solid $color-primary;
+
+        font-weight: 700;
+        font-size: 24px;
+        font-family: $title-font-stack;
+        color: $color-neutral-100;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: transparent;
+
+            border-color: $color-primary;
+
+            color: $color-primary;
+        }
+
+        &:active {
+            border-color: $color-neutral-50;
+
+            color: $color-neutral-50;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Proxima Nova';
+    src: font('proximanova_regular.ttf');
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'Proxima Nova';
+    src: font('proximanova_bold.otf');
+}
+

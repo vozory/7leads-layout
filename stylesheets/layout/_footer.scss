@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+    padding: 90px 20px 70px 20px;
+
+    background-color: $color-neutral-30;
+
+    font-weight: 700;
+    font-size: 16px;
+    font-family: $accent-font-stack;
+    color: $color-neutral-100;
+}
