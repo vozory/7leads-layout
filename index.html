@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="main-menu header__main-menu">
+    <header class="header" id="topNav">
+        <nav class="main-menu header__main-menu" id="topMenu">
             <ul class="main-menu__list">
                 <li class="main-menu__item">
                     <a href="#" class="main-menu__link">
@@ -44,12 +44,51 @@
                     </a>
                 </li>
             </ul>
+
+            <button class="main-menu__modal-btn" onclick="toggleWindow();">
+                <svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="4" y1="4" x2="46" y2="4" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                    <line x1="4" y1="20" x2="46" y2="20" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                    <line x1="4" y1="36" x2="46" y2="36" stroke="black" stroke-width="8" stroke-linecap="round"/>
+                </svg>                    
+            </button>
         </nav>
     </header>
 
     <section class="preview">
         <div class="container preview__container">
             <div class="preview__info-block">
+                <a href="#" class="logo preview__logo">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 166.5 225.9" style="enable-background:new 0 0 166.5 225.9;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0{fill:#2574A9;}
+                            .st1{fill:#2C3E50;}
+                        </style>
+                        <g>
+                            <g>
+                                <polygon class="st0" points="133.1,142.4 84.3,142.4 162.3,7.2 135.4,7.2 43.9,165.7 49.8,165.7 70.8,165.7 156.4,165.7 
+                                    156.4,159.9 156.4,159.9 156.4,130.1 133.1,130.1 		"/>
+                                <polygon class="st1" points="119,7.2 98,7.2 12.5,7.2 12.5,13 12.5,13 12.5,42.8 35.8,42.8 35.8,30.5 84.6,30.5 6.5,165.7 
+                                    33.4,165.7 124.9,7.2 		"/>
+                            </g>
+                            <g>
+                                <path class="st1" d="M22.9,179.7v3l-10.5,37.6H8l10.1-36.7H6.9v-3.8H22.9z"/>
+                                <path class="st1" d="M37.8,216.5h9.3v3.8H33.3v-40.6h4.4V216.5z"/>
+                                <path class="st1" d="M62.1,216.5h11.2v3.8H57.6v-40.6h15.2v3.8H62.1v13.7h8.7v3.8h-8.7V216.5z"/>
+                                <path class="st1" d="M97.9,220.3L96.2,210H88l-1.5,10.3H82l6.3-40.6h7.1l7,40.6H97.9z M88.5,206.1h7.1l-3.8-23.3L88.5,206.1z"/>
+                                <path class="st1" d="M113.5,179.7h12.9c3.4,0,5.2,1.7,5.2,5.2v30.3c0,3.4-1.7,5.2-5.2,5.2h-12.9V179.7z M127,214.4v-28.8
+                                    c0-0.9-0.1-1.4-0.4-1.7c-0.3-0.2-0.8-0.4-1.6-0.4h-7v32.9h7c0.8,0,1.4-0.1,1.6-0.4C126.9,215.9,127,215.3,127,214.4z"/>
+                                <path class="st1" d="M155.5,214.4v-11.1c0-0.9-0.1-1.4-0.4-1.7c-0.3-0.2-0.8-0.4-1.6-0.4h-4.4c-3.4,0-5.2-1.7-5.2-5.2v-11.3
+                                    c0-3.4,1.7-5.2,5.2-5.2h5.7c3.4,0,5.2,1.7,5.2,5.2v6.3h-4.5v-5.5c0-0.9-0.1-1.4-0.4-1.7c-0.2-0.2-0.8-0.4-1.7-0.4h-3
+                                    c-0.9,0-1.4,0.1-1.7,0.4c-0.2,0.2-0.4,0.8-0.4,1.7v9.9c0,0.8,0.1,1.4,0.4,1.6c0.2,0.3,0.8,0.4,1.7,0.4h4.4c3.4,0,5.2,1.7,5.2,5.2
+                                    v12.5c0,3.4-1.7,5.2-5.2,5.2h-5.7c-3.4,0-5.2-1.7-5.2-5.2v-6.3h4.5v5.5c0,0.9,0.1,1.4,0.4,1.7c0.2,0.2,0.8,0.4,1.7,0.4h2.9
+                                    c0.8,0,1.4-0.1,1.6-0.4C155.4,215.9,155.5,215.3,155.5,214.4z"/>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                
                 <h1 class="h1 preview__h1">ЗАКРЫТАЯ СРА - СЕТЬ №1 <br/><span class="accent-color">В УКРАИНЕ</span></h1>
 
                 <div class="preview__reg-block">
@@ -118,8 +157,8 @@
     </section>
 
     <section class="clients">
-        <div class="clients__list">
-            <div class="clients__item">
+        <div class="clients__wrapper">
+            <div class="clients__block">
                 <div class="clients__content-block">
                     <div class="clients__avatar">
                         <img src="./assets/img/developer-avatar.jpg" alt="" class="clients__img">
@@ -128,12 +167,12 @@
                     <h3 class="clients__title">Вебмастеру</h3>
 
                     <div class="clients__text">
-                        <ul>
-                            <li>Более 10 инструментов для аналитики</li>
-                            <li>Передаем данные всех заказов вебмастерам для проверки</li>
-                            <li>Ставьте свои коды ретаргета на наши лендинги</li>
-                            <li>Выдаем промо-материалы на любой оффер</li>
-                            <li>Делимся опытом</li>
+                        <ul class="clients__list">
+                            <li class="clients__item">Более 10 инструментов для аналитики</li>
+                            <li class="clients__item">Передаем данные всех заказов вебмастерам для проверки</li>
+                            <li class="clients__item">Ставьте свои коды ретаргета на наши лендинги</li>
+                            <li class="clients__item">Выдаем промо-материалы на любой оффер</li>
+                            <li class="clients__item">Делимся опытом</li>
                         </ul>
                     </div>
 
@@ -141,7 +180,7 @@
                 </div>
             </div>
 
-            <div class="clients__item">
+            <div class="clients__block">
                 <div class="clients__content-block">
                     <div class="clients__avatar">
                         <img src="./assets/img/client-avatar.jpg" alt="" class="client__img">
@@ -150,13 +189,12 @@
                     <h3 class="clients__title">Рекламодателю</h3>
 
                     <div class="clients__text">
-                        <ul>
-                            <img src="/assets/img/client-icon1.png" alt="">
-                            <li>Можем сотрудничать с любой CRM системой</li>
-                            <li>Бесплатная техническая настройка работы</li>
-                            <li>5 уровней анализа качества трафика</li>
-                            <li>Подробная аналитика по заявкам в вашем кабинете рекламодателя</li>
-                            <li>Персональный менеджер, который ответит на любые вопросы</li>
+                        <ul class="clients__list">
+                            <li class="clients__item">Можем сотрудничать с любой CRM системой</li>
+                            <li class="clients__item">Бесплатная техническая настройка работы</li>
+                            <li class="clients__item">5 уровней анализа качества трафика</li>
+                            <li class="clients__item">Подробная аналитика по заявкам в вашем кабинете рекламодателя</li>
+                            <li class="clients__item">Персональный менеджер, который ответит на любые вопросы</li>
                         </ul>
                     </div>
 
@@ -173,8 +211,40 @@
     </section>
 
     <footer class="footer">
-        <div class="container footer-container">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repellendus nesciunt minima sed quaerat, nobis explicabo similique aliquam necessitatibus maiores, quos vitae in reiciendis labore laboriosam sapiente, iusto magni.
+        <div class="container footer__container">
+            <nav class="bottom-nav footer__menu">
+                <h3 class="bottom-nav__title">Меню</h3>
+
+                <ul class="bottom-nav__list">
+                    <li class="bottom-nav__item">
+                        <a href="#" class="bottom-nav__link">Офферы</a>
+                    </li>
+                    <li class="bottom-nav__item">
+                        <a href="#" class="bottom-nav__link">Вебмастерам</a>
+                    </li>
+                    <li class="bottom-nav__item">
+                        <a href="#" class="bottom-nav__link">Рекламодателям</a>
+                    </li>
+                    <li class="bottom-nav__item">
+                        <a href="#" class="bottom-nav__link">Информации</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="contacts-block footer__contacts">
+                <h3 class="contacts-block__title">Наши контакты</h3>
+
+                <ul class="contacts-block__list">
+                    <li class="contacts-block__item">
+                        <a href="#" class="contacts-block__link">Email: support@7leads.biz</a>
+                    </li>
+                    <li class="contacts-block__item">
+                        <a href="#" class="contacts-block__link">Телеграм: @cpa7leads</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="copyright footer__copyright">(с)2022 - СРА сеть Восточная Европа Партнерская программа в Восточной Европе</div>
         </div>
     </footer>
 

@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the logo component.
+// -----------------------------------------------------------------------------
+.logo {
+    display: inline-block;
+    width: 101px;
+    height: 137px;
+
+    transition: all .2s ease-out;
+
+    &:hover {
+        filter: grayscale(0.2);
+        opacity: 0.8;
+    }
+}

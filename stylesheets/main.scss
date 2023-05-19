@@ -15,12 +15,14 @@
   'base/base',
   'base/fonts',
   'base/typography',
-  'base/helpers';
+  'base/helpers',
+  'base/animations';
 
 // 4. Layout-related sections
 @import
   'layout/header',
   'layout/main-menu',
+  'layout/bottom-menu',
   'layout/preview-section',
   'layout/about-us-section',
   'layout/clients-section',
@@ -29,6 +31,7 @@
 
 // 5. Components
 @import
+  'components/logo',
   'components/button';
 
 // 6. Page-specific styles

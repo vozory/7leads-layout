@@ -51,12 +51,12 @@ a {
 
   transition: background-color .2s ease-out, border-color .2s ease-out, color .2s ease-out;
 
-  @include on-event(hover) {
-    color: $color-neutral-10;
+  &:hover {
+    color: $color-primary-30;
   }
 
-  @include on-event(active) {
-    color: $color-primary;
+  &:active {
+    color: $color-primary-50;
   }
 }
 

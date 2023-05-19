@@ -2,17 +2,27 @@
 // This file contains all styles related to the About Us section of the site/application.
 // -----------------------------------------------------------------------------
 .clients {
-    padding-top: 75px;
+    padding: 0 20px 35px 20px;
 
-    &__list {
-        display: flex;
-        gap: 14px;
-        justify-content: space-between;
+    @include respond-to('medium') {
+        padding: 0;
+        padding-top: 75px;
     }
 
-    &__item {
+    &__wrapper {
         display: flex;
-        justify-content: flex-start;
+        flex-direction: column;
+        gap: 14px;
+        
+        @include respond-to('medium') {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__block {
+        display: flex;
+        justify-content: center;
 
         width: 100%;
         padding: 28px 100px 50px;
@@ -20,15 +30,23 @@
         background-color: $color-neutral-100;
 
         box-shadow: 5px 0 15px rgba(0, 0, 0, 0.4);
+
+        @include respond-to('medium') {
+            justify-content: flex-start;
+        }
     }
 
-    &__item:nth-child(1) {
+    &__block:nth-child(1) {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
 
         background-color: $color-primary;
 
         color: $color-neutral-100;
+
+        @include respond-to('medium') {
+            justify-content: flex-end;
+        }
 
         & .clients__link {
             display: inline-block;
@@ -74,7 +92,8 @@
         align-items: center;
         justify-content: flex-start;
 
-        width: 327px;
+        max-width: 327px;
+        width: 100%;
         padding-bottom: 70px;
 
         position: relative;
@@ -92,6 +111,7 @@
 
     &__title {
         padding-bottom: 4px;
+
         font-weight: 700;
         font-size: 24px;
         font-family: $title-font-stack;
@@ -103,6 +123,18 @@
         font-size: 16px;
         font-family: $accent-font-stack;
         line-height: 1.2;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__item {
+        display: flex;
+        
+        position: relative;
     }
 
     &__link {

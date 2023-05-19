@@ -1,46 +1,7 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
+// This file contains all styles related to the bottom menu of the site/application.
 // -----------------------------------------------------------------------------
-.footer {
-    padding: 90px 20px 70px 20px;
-
-    background-color: $color-neutral-30;
-
-    font-weight: 400;
-    font-size: 16px;
-    font-family: $accent-font-stack;
-    color: $color-neutral-100;
-
-    &__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 45px;
-
-        @include respond-to('medium') {
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: flex-start;
-            flex-wrap: wrap;
-        }
-    }
-
-    &__contacts {
-        text-align: center;
-    }
-
-    &__copyright {
-        width: 100%;
-        font-weight: 400;
-        font-size: 14px;
-        text-align: center;
-        color: $color-neutral-50;
-        line-height: 1.2;
-    }
-}
-
-.contacts-block {
+.bottom-nav {
     &__title {
         margin: 0 0 20px 0;
         padding-bottom: 15px;
@@ -50,7 +11,7 @@
         font-weight: 700;
         font-size: 18px;
         text-align: center;
-        
+
         @include respond-to('medium') {
             text-align: left;
         }

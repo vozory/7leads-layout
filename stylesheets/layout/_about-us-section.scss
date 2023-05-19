@@ -2,42 +2,47 @@
 // This file contains all styles related to the About Us section of the site/application.
 // -----------------------------------------------------------------------------
 .about-us {
-    margin-top: 75px;
+    margin-top: 35px;
+
+    @include respond-to('small') {
+        margin-top: 75px;
+    }
 
     &__list {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
         
-        // grid: auto-flow / 1fr 1fr 1fr 1fr;
-        grid-template: 
-            [row] "active . . ." 1fr [row]
-            [row] "active . . ." 1fr [row];
-        grid-gap: 12px;
-        grid-auto-columns: 1fr;
-        grid-auto-flow: row;
-        // grid-template-rows: repeat(3, 1fr);
+        @include respond-to('medium') {
+            display: grid;
+            grid-template: 
+                [row] "active . . ." 1fr [row]
+                [row] "active . . ." 1fr [row];
+            grid-gap: 12px;
+            grid-auto-columns: 1fr;
+            grid-auto-flow: row;
+            transition: all .3s ease-out;
+        }
         
-        // grid-t
-        // grid-template-columns: repeat(4, 1fr);
-        
-        // flex-shrink: 0;
-        // flex-shrink: 1;
-        // grid-gap: 12px;
-        transition: all .3s ease-out;
     }
 
     &__item:nth-child(1) {
         background-color: $color-neutral-100;
         grid-area: active;
-        // grid-row: 1 / -1;
     }
 
     &__item {
         padding: 28px 30px 18px 30px;
         background-color: $color-neutral-100;
-        // grid-area: item;
         transition: all .3s ease-out;
 
+        cursor: pointer;
+
         font-family: $text-font-stack;
+
+        &:hover {
+            box-shadow: 20px 0 65px rgba(31, 31, 31, 0.5);
+        }
     }
 
     &__title {
