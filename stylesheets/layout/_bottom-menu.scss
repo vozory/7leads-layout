@@ -23,7 +23,15 @@
 
             position: absolute;
             top: 100%;
-            left: 0%;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            @include respond-to('medium') {
+                left: 0%;
+
+                transform: translateX(0%);
+            }
 
             background-color: $color-neutral-50;
         }
