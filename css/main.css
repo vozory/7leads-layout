@@ -503,9 +503,10 @@ header {
   .main-menu {
     display: block;
     height: auto;
-    padding-top: 20px;
+    padding-top: 0;
     position: relative;
-    background-color: transparent;
+    background-color: #ececec;
+    border-bottom: 2px solid #3a539b;
   }
 }
 .main-menu__modal-btn {
@@ -517,6 +518,11 @@ header {
   background: none;
   border: none;
   outline: none;
+}
+@media only screen and (min-width: 900px) {
+  .main-menu__modal-btn {
+    display: none;
+  }
 }
 .main-menu__modal-btn:hover {
   cursor: pointer;
@@ -608,6 +614,7 @@ header {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 35px;
+    opacity: 1;
   }
 }
 .main-menu--active .main-menu__list {
@@ -618,7 +625,7 @@ header {
   display: inline-block;
   padding: 10px 15px;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   font-family: "Proxima Nova", "Open Sans", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;

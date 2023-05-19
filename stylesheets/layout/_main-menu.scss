@@ -17,11 +17,12 @@
     @include respond-to('medium') {
         display: block;
         height: auto;
-        padding-top: 20px;
+        padding-top: 0;
 
         position: relative;
 
-        background-color: transparent;
+        background-color: #ececec;
+        border-bottom: 2px solid $color-primary;
     }
 
     &__modal-btn {
@@ -36,6 +37,10 @@
 
         border: none;
         outline: none;
+
+        @include respond-to('medium') {
+            display: none;
+        }
 
         &:hover {
             cursor: pointer;
@@ -141,6 +146,8 @@
             display: flex;
             flex-direction: row;
             gap: 35px;
+
+            opacity: 1;
         }
 
         #{$p}--active & {
@@ -157,7 +164,7 @@
         padding: 10px 15px;
 
         font-weight: 700;
-        font-size: 21px;
+        font-size: 18px;
         font-family: $title-font-stack;
         color: $color-neutral-100;
         text-transform: uppercase;
