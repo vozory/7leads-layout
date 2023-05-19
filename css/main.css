@@ -381,13 +381,13 @@ h1 {
   font-style: normal;
   font-weight: 400;
   font-family: "Proxima Nova";
-  src: url("/assets/fonts/proximanova_regular.ttf");
+  src: url("../assets/fonts/proximanova_regular.ttf");
 }
 @font-face {
   font-style: normal;
   font-weight: 700;
   font-family: "Proxima Nova";
-  src: url("/assets/fonts/proximanova_bold.otf");
+  src: url("../assets/fonts/proximanova_bold.otf");
 }
 /**
  * Basic typography style for copy text
@@ -721,7 +721,7 @@ header {
 }
 @media only screen and (min-width: 900px) {
   .preview {
-    background-image: url("/assets/img/preview-bg.png");
+    background-image: url("../assets/img/preview-bg.png");
     background-position: left -300px bottom 0;
     background-repeat: no-repeat;
   }
