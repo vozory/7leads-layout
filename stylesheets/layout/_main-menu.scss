@@ -21,8 +21,10 @@
 
         position: relative;
 
-        background-color: #ececec;
-        border-bottom: 2px solid $color-primary;
+        &--fixed {
+            background-color: #ececec;
+            border-bottom: 2px solid $color-primary;
+        }
     }
 
     &__modal-btn {

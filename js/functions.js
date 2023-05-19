@@ -15,16 +15,18 @@ function makeActive() {
 }
 
 document.addEventListener('scroll', (event) => {
-    // lastKnownScrollPosition = window.scrollY;
-    // console.log(lastKnownScrollPosition);
+    lastKnownScrollPosition = window.scrollY;
   
-    // if (lastKnownScrollPosition > 0) {
-    //     let topMenu = document.getElementById('topNav');
-    //     topMenu.classList.add('is-fixed');
-    // }
+    if (lastKnownScrollPosition > 0) {
+        let topMenu = document.getElementById('topMenu');
+        topMenu.classList.add('main-menu--fixed');
+    } else {
+        let topMenu = document.getElementById('topMenu');
+        topMenu.classList.remove('main-menu--fixed');
+    }
 
 
-    
+
     // if (ticking) {
         
     //     window.requestAnimationFrame(() => {
