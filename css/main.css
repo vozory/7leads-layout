@@ -757,6 +757,11 @@ header {
 .preview__logo {
   margin: 0 auto 65px auto;
 }
+@media only screen and (min-width: 900px) {
+  .preview__logo {
+    display: none !important;
+  }
+}
 .preview__h1 {
   margin-bottom: 85px;
   font-size: 24px;

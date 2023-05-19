@@ -37,6 +37,10 @@
 
     &__logo {
         margin: 0 auto 65px auto;
+
+        @include respond-to('medium') {
+            display: none !important;
+        }
     }
 
     &__h1 {
